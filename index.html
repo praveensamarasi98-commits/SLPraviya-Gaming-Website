@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SL PRAVIYA Gaming Hub</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== 🌙 CLEAN AMBIENT BACKGROUND ===== */
+body {
+  color: white;
+  background: #050507;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -40%;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(0,255,200,0.10), transparent 45%),
+    radial-gradient(circle at 70% 60%, rgba(0,120,255,0.08), transparent 50%);
+  filter: blur(90px);
+}
+
+/* ===== HEADER ===== */
+.channel-banner {
+  height: 260px;
+  background: url('https://yt3.googleusercontent.com/O2VmR1nkaz9QnV6xi_ZBIOsYAOmy8zAQxJgLHyxOwTOya5cLdGVAVDwfyy1uBo9q8DWZAJ5J=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj')
+  center/cover no-repeat;
+}
+
+.channel-info {
+  padding: 0 60px;
+  margin-top: -70px;
+}
+
+.channel-info img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #00ffcc;
+}
+
+h2 {
+  color: #00ffcc;
+  margin-top: 10px;
+}
+
+/* ===== TITLES ===== */
+.section-title {
+  padding: 25px 60px;
+  color: #00ffcc;
+  font-size: 22px;
+}
+
+/* ===== VIDEOS GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 0 60px 60px;
+}
+
+/* ===== VIDEO CARD ===== */
+.card {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0,255,200,0.25);
+}
+
+/* 🔥 FIXED YOUTUBE EMBED */
+iframe {
+  width: 100%;
+  height: 220px;
+  border: none;
+}
+
+.card p {
+  padding: 10px;
+  text-align: center;
+  color: #ccc;
+}
+
+/* ===== PLAYLIST GRID ===== */
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 200px));
+  gap: 18px;
+  padding: 0 60px 60px;
+}
+
+/* ===== PLAYLIST CARD ===== */
+.playlist-card {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.25s;
+  text-align: center;
+}
+
+.playlist-card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 18px rgba(0,255,200,0.25);
+}
+
+.playlist-card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  display: block;
+}
+
+.playlist-card p {
+  font-size: 13px;
+  padding: 8px;
+  color: #ccc;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="channel-banner"></div>
+
+<div class="channel-info">
+  <img src="https://yt3.googleusercontent.com/eDWWyck2sbT65mKVDC9Zzw_gx2J1p1bdCK05zFWPB45xKcH_f_V-UhaxWG8OH8l5m3z60v6i8A=s160-c-k-c0x00ffffff-no-rj">
+  <h2>SL PRAVIYA GAMING</h2>
+</div>
+
+<!-- 🔥 LATEST VIDEOS -->
+<div class="section-title">🔥 Latest Videos</div>
+
+<div class="grid">
+
+  <div class="card">
+    <iframe src="https://www.youtube.com/embed/uFLEDZR9HNk?rel=0&modestbranding=1" allowfullscreen></iframe>
+    <p>යාලුවෙක් එක්ක Combat Master ගහමු.</p>
+  </div>
+
+  <div class="card">
+    <iframe src="https://www.youtube.com/embed/BafBtcupkTo" allowfullscreen></iframe>
+    <p>කලේක බැහැලා කඳු නගිමු - Getting over it</p>
+  </div>
+
+  <div class="card">
+    <iframe src="https://www.youtube.com/embed/vTK2zsqa6tk?rel=0&modestbranding=1" allowfullscreen></iframe>
+    <p>සුපිරි පටන්ගැන්ම.😘 - Assassin's Creed Valhalla</p>
+  </div>
+
+</div>
+
+<!-- 📂 PLAYLISTS -->
+<div class="section-title">📂 Playlists</div>
+
+<div class="playlist-grid">
+
+  <a href="GTA 5 (Playlist).html">
+    <div class="playlist-card">
+      <img src="https://i.ytimg.com/vi/zsTGlIUyWzU/hqdefault.jpg">
+      <p>GTA 5 (Playlist)</p>
+    </div>
+  </a>
+
+  <a href="RDR2 (Playlist).html">
+    <div class="playlist-card">
+      <img src="https://i.ytimg.com/vi/Jkfu3x_R_70/hqdefault.jpg">
+      <p>RDR2 (Playlist)</p>
+    </div>
+  </a>
+
+</div>
+
+</body>
+</html>
